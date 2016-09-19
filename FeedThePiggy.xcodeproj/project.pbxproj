@@ -22,6 +22,7 @@
 		D0041A661D8F9EE2002EE944 /* Graph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0041A651D8F9EE2002EE944 /* Graph.storyboard */; };
 		D0041A691D8F9F00002EE944 /* ItemList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0041A671D8F9F00002EE944 /* ItemList.storyboard */; };
 		D0041A6B1D8F9F18002EE944 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0041A6A1D8F9F18002EE944 /* Setting.storyboard */; };
+		D0041A6D1D8FA32F002EE944 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0041A6C1D8FA32F002EE944 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D0041A651D8F9EE2002EE944 /* Graph.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Graph.storyboard; sourceTree = "<group>"; };
 		D0041A681D8F9F00002EE944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ItemList.storyboard; sourceTree = "<group>"; };
 		D0041A6A1D8F9F18002EE944 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		D0041A6C1D8FA32F002EE944 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				D0041A651D8F9EE2002EE944 /* Graph.storyboard */,
 				D0041A621D8F9EC6002EE944 /* FeedPiggyAction.storyboard */,
 				D0041A321D8F9A9D002EE944 /* LaunchScreen.storyboard */,
+				D0041A6C1D8FA32F002EE944 /* Theme.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				D0041A601D8F9DF3002EE944 /* GraphViewController.swift in Sources */,
 				D0041A271D8F9A9D002EE944 /* AppDelegate.swift in Sources */,
 				D0041A581D8F9ADF002EE944 /* PiggyViewController.swift in Sources */,
+				D0041A6D1D8FA32F002EE944 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

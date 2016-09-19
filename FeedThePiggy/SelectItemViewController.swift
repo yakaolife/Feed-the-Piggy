@@ -8,18 +8,40 @@
 
 import UIKit
 
-class SelectItemViewController: UIViewController {
+class SelectItemViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //Search set up
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.searchBar.delegate = self
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 1
+    }
+    
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath)
+        
+        return cell
+    }
+    
     
 
     /*
@@ -32,4 +54,19 @@ class SelectItemViewController: UIViewController {
     }
     */
 
+}
+
+
+//Search
+extension SelectItemViewController: UISearchResultsUpdating{
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        print("updateSearchResults")
+    }
+}
+
+extension SelectItemViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        print("searchBar: selectedScopeButtonIndexDidChange")
+    }
 }
