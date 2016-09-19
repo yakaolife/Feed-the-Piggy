@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D0041A221D8F9A9D002EE944"
+               BuildableName = "FeedThePiggy.app"
+               BlueprintName = "FeedThePiggy"
+               ReferencedContainer = "container:FeedThePiggy.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D0041A391D8F9A9D002EE944"
+               BuildableName = "FeedThePiggyTests.xctest"
+               BlueprintName = "FeedThePiggyTests"
+               ReferencedContainer = "container:FeedThePiggy.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D0041A441D8F9A9D002EE944"
+               BuildableName = "FeedThePiggyUITests.xctest"
+               BlueprintName = "FeedThePiggyUITests"
+               ReferencedContainer = "container:FeedThePiggy.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D0041A221D8F9A9D002EE944"
+            BuildableName = "FeedThePiggy.app"
+            BlueprintName = "FeedThePiggy"
+            ReferencedContainer = "container:FeedThePiggy.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D0041A221D8F9A9D002EE944"
+            BuildableName = "FeedThePiggy.app"
+            BlueprintName = "FeedThePiggy"
+            ReferencedContainer = "container:FeedThePiggy.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D0041A221D8F9A9D002EE944"
+            BuildableName = "FeedThePiggy.app"
+            BlueprintName = "FeedThePiggy"
+            ReferencedContainer = "container:FeedThePiggy.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
