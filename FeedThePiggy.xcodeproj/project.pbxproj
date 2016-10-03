@@ -15,14 +15,17 @@
 		D0041A3F1D8F9A9D002EE944 /* FeedThePiggyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0041A3E1D8F9A9D002EE944 /* FeedThePiggyTests.swift */; };
 		D0041A4A1D8F9A9D002EE944 /* FeedThePiggyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0041A491D8F9A9D002EE944 /* FeedThePiggyUITests.swift */; };
 		D0041A581D8F9ADF002EE944 /* PiggyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0041A571D8F9ADF002EE944 /* PiggyViewController.swift */; };
-		D0041A5A1D8F9B18002EE944 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0041A591D8F9B18002EE944 /* ItemListViewController.swift */; };
 		D0041A5E1D8F9DE1002EE944 /* SelectItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0041A5D1D8F9DE1002EE944 /* SelectItemViewController.swift */; };
 		D0041A601D8F9DF3002EE944 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0041A5F1D8F9DF3002EE944 /* GraphViewController.swift */; };
 		D0041A641D8F9EC6002EE944 /* FeedPiggyAction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0041A621D8F9EC6002EE944 /* FeedPiggyAction.storyboard */; };
 		D0041A661D8F9EE2002EE944 /* Graph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0041A651D8F9EE2002EE944 /* Graph.storyboard */; };
-		D0041A691D8F9F00002EE944 /* ItemList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0041A671D8F9F00002EE944 /* ItemList.storyboard */; };
 		D0041A6B1D8F9F18002EE944 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0041A6A1D8F9F18002EE944 /* Setting.storyboard */; };
 		D0041A6D1D8FA32F002EE944 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0041A6C1D8FA32F002EE944 /* Theme.swift */; };
+		D069C8381D963A780070EFEC /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069C8371D963A780070EFEC /* ItemCell.swift */; };
+		D069C83F1DA06F9A0070EFEC /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069C83E1DA06F9A0070EFEC /* NewItemViewController.swift */; };
+		D069C8421DA07FEC0070EFEC /* FoodItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069C8401DA07FEC0070EFEC /* FoodItem+CoreDataClass.swift */; };
+		D069C8431DA07FEC0070EFEC /* FoodItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069C8411DA07FEC0070EFEC /* FoodItem+CoreDataProperties.swift */; };
+		D092270D1DA1B9E1003622D0 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092270C1DA1B9E1003622D0 /* ItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +60,18 @@
 		D0041A491D8F9A9D002EE944 /* FeedThePiggyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedThePiggyUITests.swift; sourceTree = "<group>"; };
 		D0041A4B1D8F9A9D002EE944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0041A571D8F9ADF002EE944 /* PiggyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiggyViewController.swift; sourceTree = "<group>"; };
-		D0041A591D8F9B18002EE944 /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		D0041A5D1D8F9DE1002EE944 /* SelectItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectItemViewController.swift; sourceTree = "<group>"; };
 		D0041A5F1D8F9DF3002EE944 /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		D0041A631D8F9EC6002EE944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FeedPiggyAction.storyboard; sourceTree = "<group>"; };
 		D0041A651D8F9EE2002EE944 /* Graph.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Graph.storyboard; sourceTree = "<group>"; };
-		D0041A681D8F9F00002EE944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ItemList.storyboard; sourceTree = "<group>"; };
 		D0041A6A1D8F9F18002EE944 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		D0041A6C1D8FA32F002EE944 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D069C8371D963A780070EFEC /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		D069C83E1DA06F9A0070EFEC /* NewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
+		D069C8401DA07FEC0070EFEC /* FoodItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FoodItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D069C8411DA07FEC0070EFEC /* FoodItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FoodItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D069C8441DA0C5840070EFEC /* testPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = testPlayground.playground; sourceTree = "<group>"; };
+		D092270C1DA1B9E1003622D0 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +102,8 @@
 		D0041A1A1D8F9A9D002EE944 = {
 			isa = PBXGroup;
 			children = (
+				D069C8401DA07FEC0070EFEC /* FoodItem+CoreDataClass.swift */,
+				D069C8411DA07FEC0070EFEC /* FoodItem+CoreDataProperties.swift */,
 				D0041A251D8F9A9D002EE944 /* FeedThePiggy */,
 				D0041A3D1D8F9A9D002EE944 /* FeedThePiggyTests */,
 				D0041A481D8F9A9D002EE944 /* FeedThePiggyUITests */,
@@ -121,6 +130,7 @@
 				D0041A261D8F9A9D002EE944 /* AppDelegate.swift */,
 				D0041A301D8F9A9D002EE944 /* Assets.xcassets */,
 				D0041A351D8F9A9D002EE944 /* Info.plist */,
+				D069C8441DA0C5840070EFEC /* testPlayground.playground */,
 			);
 			path = FeedThePiggy;
 			sourceTree = "<group>";
@@ -147,9 +157,10 @@
 			isa = PBXGroup;
 			children = (
 				D0041A571D8F9ADF002EE944 /* PiggyViewController.swift */,
-				D0041A591D8F9B18002EE944 /* ItemListViewController.swift */,
 				D0041A5D1D8F9DE1002EE944 /* SelectItemViewController.swift */,
 				D0041A5F1D8F9DF3002EE944 /* GraphViewController.swift */,
+				D069C83E1DA06F9A0070EFEC /* NewItemViewController.swift */,
+				D092270C1DA1B9E1003622D0 /* ItemDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -167,11 +178,11 @@
 			children = (
 				D0041A2A1D8F9A9D002EE944 /* Main.storyboard */,
 				D0041A6A1D8F9F18002EE944 /* Setting.storyboard */,
-				D0041A671D8F9F00002EE944 /* ItemList.storyboard */,
 				D0041A651D8F9EE2002EE944 /* Graph.storyboard */,
 				D0041A621D8F9EC6002EE944 /* FeedPiggyAction.storyboard */,
 				D0041A321D8F9A9D002EE944 /* LaunchScreen.storyboard */,
 				D0041A6C1D8FA32F002EE944 /* Theme.swift */,
+				D069C8371D963A780070EFEC /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -287,7 +298,6 @@
 				D0041A311D8F9A9D002EE944 /* Assets.xcassets in Resources */,
 				D0041A6B1D8F9F18002EE944 /* Setting.storyboard in Resources */,
 				D0041A661D8F9EE2002EE944 /* Graph.storyboard in Resources */,
-				D0041A691D8F9F00002EE944 /* ItemList.storyboard in Resources */,
 				D0041A2C1D8F9A9D002EE944 /* Main.storyboard in Resources */,
 				D0041A641D8F9EC6002EE944 /* FeedPiggyAction.storyboard in Resources */,
 			);
@@ -314,13 +324,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D069C8381D963A780070EFEC /* ItemCell.swift in Sources */,
 				D0041A2F1D8F9A9D002EE944 /* FeedThePiggy.xcdatamodeld in Sources */,
+				D069C83F1DA06F9A0070EFEC /* NewItemViewController.swift in Sources */,
 				D0041A5E1D8F9DE1002EE944 /* SelectItemViewController.swift in Sources */,
-				D0041A5A1D8F9B18002EE944 /* ItemListViewController.swift in Sources */,
 				D0041A601D8F9DF3002EE944 /* GraphViewController.swift in Sources */,
+				D069C8421DA07FEC0070EFEC /* FoodItem+CoreDataClass.swift in Sources */,
 				D0041A271D8F9A9D002EE944 /* AppDelegate.swift in Sources */,
 				D0041A581D8F9ADF002EE944 /* PiggyViewController.swift in Sources */,
+				D092270D1DA1B9E1003622D0 /* ItemDetailViewController.swift in Sources */,
 				D0041A6D1D8FA32F002EE944 /* Theme.swift in Sources */,
+				D069C8431DA07FEC0070EFEC /* FoodItem+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,14 +392,6 @@
 				D0041A631D8F9EC6002EE944 /* Base */,
 			);
 			name = FeedPiggyAction.storyboard;
-			sourceTree = "<group>";
-		};
-		D0041A671D8F9F00002EE944 /* ItemList.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0041A681D8F9F00002EE944 /* Base */,
-			);
-			name = ItemList.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -581,6 +587,7 @@
 				D0041A501D8F9A9D002EE944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0041A511D8F9A9D002EE944 /* Build configuration list for PBXNativeTarget "FeedThePiggyTests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +596,7 @@
 				D0041A531D8F9A9D002EE944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0041A541D8F9A9D002EE944 /* Build configuration list for PBXNativeTarget "FeedThePiggyUITests" */ = {
 			isa = XCConfigurationList;
@@ -597,6 +605,7 @@
 				D0041A561D8F9A9D002EE944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

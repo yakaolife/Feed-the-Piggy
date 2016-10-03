@@ -14,10 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         ThemeManager.set()
+        
+        
         return true
     }
 
@@ -46,6 +47,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: - Core Data stack
+    // New to iOS 10:
+    // persistentContainer.viewContext = NSMangedObjectContext
+    // persistentContainer.managedObjectModel = NSManagedObjectModel
+    // persistentContainer.persistentStoreCoordinator = PersistentStoreCoordinator
 
     lazy var persistentContainer: NSPersistentContainer = {
         /*
@@ -54,6 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
+        print("PersistentContainer lazy init")
         let container = NSPersistentContainer(name: "FeedThePiggy")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
@@ -70,6 +76,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                  */
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
+            
+            
         })
         return container
     }()

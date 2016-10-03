@@ -12,6 +12,7 @@ struct ThemeManager{
     
     
     static func set(){
-        UINavigationBar.appearance().barTintColor = UIColor.blue
+        //UINavigationBar.appearance().barTintColor = UIColor.blue
+        
     }
 }
