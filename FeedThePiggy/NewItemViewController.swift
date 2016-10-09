@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NewItemViewController: UIViewController{
+class NewItemViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
@@ -41,6 +41,8 @@ class NewItemViewController: UIViewController{
 
         //Adding Save (and Select) button
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(save(_:)))
+        
+        nameTextField.delegate = self
         
         if !isEdit {
             //New!
@@ -228,6 +230,16 @@ class NewItemViewController: UIViewController{
         //dismiss(animated: true, completion: nil)
     }
     
+    //Dismiss keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     
     //MARK: - Helper Methods
     func showAlert(title: String, message: String, cancelButtonTitle: String){
@@ -238,15 +250,9 @@ class NewItemViewController: UIViewController{
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //Parsing the string value out of the textfield
+    func priceParsing(input: String) -> String{
+        return ""
     }
-    */
 
 }

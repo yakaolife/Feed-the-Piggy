@@ -29,6 +29,7 @@ struct ThemeManager{
         UINavigationBar.appearance().shadowImage = backgroundImage;
         UINavigationBar.appearance().tintColor = UIColor.white
         
+        
     }
 }
 //To make an opaque Navigation bar, hack
