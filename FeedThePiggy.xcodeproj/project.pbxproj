@@ -255,6 +255,7 @@
 				TargetAttributes = {
 					D0041A221D8F9A9D002EE944 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GPLKNWKAEV;
 						ProvisioningStyle = Automatic;
 					};
 					D0041A391D8F9A9D002EE944 = {
@@ -494,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GPLKNWKAEV;
 				INFOPLIST_FILE = FeedThePiggy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = betsyakao.FeedThePiggy;
@@ -506,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GPLKNWKAEV;
 				INFOPLIST_FILE = FeedThePiggy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = betsyakao.FeedThePiggy;

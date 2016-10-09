@@ -51,7 +51,7 @@
         <scene sceneID="jf1-PU-qCt">
             <objects>
                 <viewControllerPlaceholder storyboardName="Setting" id="Zwh-5Y-vew" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Setting" id="kMz-K3-Y62"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="" id="kMz-K3-Y62"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Jn-N6-IDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,11 +61,14 @@
         <scene sceneID="1oD-Tw-HCK">
             <objects>
                 <viewControllerPlaceholder storyboardName="FeedPiggyAction" referencedIdentifier="PiggyActionNavigationController" id="cdM-s2-spd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item List" id="496-Kl-uDp"/>
+                    <tabBarItem key="tabBarItem" title="" image="food" id="496-Kl-uDp"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kdn-tG-AFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-642" y="524"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="food" width="30" height="30"/>
+    </resources>
 </document>

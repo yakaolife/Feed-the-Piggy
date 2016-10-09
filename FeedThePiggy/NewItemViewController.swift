@@ -34,6 +34,13 @@ class NewItemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Styling
+        seGoalButton.backgroundColor = pinkColor
+        seGoalButton.tintColor = UIColor.white
+        setEndDateButton.backgroundColor = pinkColor
+        setEndDateButton.tintColor = UIColor.white
+        
+        
         //Adding Save (and Select) button
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(save(_:)))
         
@@ -74,6 +81,12 @@ class NewItemViewController: UIViewController {
 
     @IBAction func setGoalButtonClicked(_ sender: AnyObject) {
         goalView.isHidden = !goalView.isHidden
+        
+        if goalView.isHidden {
+            seGoalButton.setTitle("Set Goal", for: .normal)
+        }else {
+            seGoalButton.setTitle("Hide Goal", for: .normal)
+        }
     }
 
     override func didReceiveMemoryWarning() {

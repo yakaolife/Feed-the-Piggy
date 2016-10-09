@@ -16,7 +16,10 @@ class PiggyViewController: UIViewController, SelectItemProtocol{
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-
+        let foodItem = UIImage(named: "food")
+        self.tabBarController?.tabBar.items?[1].image = foodItem
+        let insets = UIEdgeInsets(top: 5.0, left: 0, bottom: -5.0, right: 0)
+        self.tabBarController?.tabBar.items?[1].imageInsets = insets
     }
     
     func selected(foodItem: FoodItem) {

@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         ThemeManager.set()
         
+        //Have to manually set the UITabBarItem for the item list because we are reusing view controllers
+        
+        
         
         return true
     }
