@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NewItemViewController: UIViewController {
+class NewItemViewController: UIViewController{
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
@@ -17,11 +17,11 @@ class NewItemViewController: UIViewController {
     @IBOutlet weak var seGoalButton: UIButton!
     @IBOutlet weak var goalView: UIView!
     @IBOutlet weak var goalTextField: UITextField!
-    @IBOutlet weak var setEndDateButton: UIButton!
-    @IBOutlet weak var dateLabel: UILabel!
-    
+    @IBOutlet weak var endDateTextField: UITextField!
+    @IBOutlet weak var clearDateButton: UIButton!
+
     var enddateSelected:NSDate?
-    
+    var datePicker: UIDatePicker!
     
     var isEdit : Bool = false
     var setGoalExpanded: Bool = false
@@ -30,6 +30,7 @@ class NewItemViewController: UIViewController {
     //Will be empty if Create New/not edit
     var foodItem: FoodItem?
     var managedObjectContext : NSManagedObjectContext!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,10 +38,7 @@ class NewItemViewController: UIViewController {
         //Styling
         seGoalButton.backgroundColor = pinkColor
         seGoalButton.tintColor = UIColor.white
-        setEndDateButton.backgroundColor = pinkColor
-        setEndDateButton.tintColor = UIColor.white
-        
-        
+
         //Adding Save (and Select) button
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(save(_:)))
         
@@ -48,6 +46,7 @@ class NewItemViewController: UIViewController {
             //New!
             currentTotalLabel.isHidden = true
             goalView.isHidden = true
+            clearDateButton.isHidden = true
             
         }else if foodItem != nil {
             //edit mode
@@ -63,10 +62,11 @@ class NewItemViewController: UIViewController {
             }
             
             if (foodItem?.enddateSet)!{
-                dateLabel.text = dateFormatter.string(from: (foodItem?.enddate)! as Date)
+                endDateTextField.text = dateFormatter.string(from: (foodItem?.enddate)! as Date)
+                clearDateButton.isHidden = false
                 
             }else{
-                dateLabel.isHidden = true
+                clearDateButton.isHidden = true
             }
             
             if !(foodItem?.goalSet)! && !(foodItem?.enddateSet)!{
@@ -79,6 +79,51 @@ class NewItemViewController: UIViewController {
         
     }
 
+    
+    @IBAction func endDateTextFieldClicked(_ sender: UITextField) {
+        //print("endDateTextFieldClicked!")
+        datePicker = UIDatePicker()
+        datePicker.backgroundColor = UIColor.white
+        datePicker.datePickerMode = .date
+        sender.inputView = datePicker
+        
+        //Add toolbar for cancel, and done
+        let toolBar = UIToolbar()
+        toolBar.isTranslucent = true
+        toolBar.tintColor = pinkColor
+        toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(NewItemViewController.doneClick))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(NewItemViewController.cancelClick))
+        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: true)
+        
+        toolBar.isUserInteractionEnabled = true
+        sender.inputAccessoryView = toolBar
+        
+    }
+    
+    func doneClick(){
+        //print("done click!")
+        enddateSelected = datePicker.date as NSDate?
+        let dateformatter = DateFormatter()
+        dateformatter.dateStyle = .medium
+        dateformatter.timeStyle = .none
+        endDateTextField.text = dateformatter.string(from: datePicker.date)
+        clearDateButton.isHidden = false
+        endDateTextField.resignFirstResponder()
+    }
+    
+    func cancelClick(){
+        endDateTextField.resignFirstResponder()
+    }
+    
+    @IBAction func clearDate(_ sender: UIButton) {
+        enddateSelected = nil
+        endDateTextField.text = ""
+        clearDateButton.isHidden = true;
+    }
+    
     @IBAction func setGoalButtonClicked(_ sender: AnyObject) {
         goalView.isHidden = !goalView.isHidden
         
