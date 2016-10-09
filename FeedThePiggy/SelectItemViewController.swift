@@ -65,6 +65,7 @@ class SelectItemViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.tableHeaderView = searchController.searchBar
         searchController.searchBar.delegate = self
         
+        //TODO: Hide the search bar by default        
         
         print(context)
         
